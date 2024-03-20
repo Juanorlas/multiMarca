@@ -17,9 +17,9 @@
             <div class="overlay-content">
                 <a href="../html/index.html">All Brands Space</a>
                 <a href="../html/americanEagle.html">AmericanEagle</a>
-                <a href="#">Chevignon</a>
-                <a href="#">Esprit</a>
-                <a href="#">G-Star Raw</a>
+                <a href="../html/chevignon.html">Chevignon</a>
+                <a href="../html/esprit.html">Esprit</a>
+                <a href="../html/gStarRaw.html">G-Star Raw</a>
             </div>
         </div>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -50,19 +50,39 @@
 
     <!-- codigo debajo de la cabecera -->
 
-    <form>
-        <img src="../view/img/icons-usuario.png" alt="">
-        <label for="username">Usuario</label>
-        <input type="text" id="username" placeholder="login" required>
-        <label for="password">Contraseña</label>
-        <input type="password" id="password" placeholder="contraseña" required>
-        <div class="box-visible">
-            <input type="checkbox" id="visible">
-            <label for="visible">Mostrar Contraseña</label>
-        </div>
-        <button type="submit" id="submit">Iniciar Sesion</button>
-    </form>
 
+
+    <body>
+
+    <div id="contenedor">
+
+        <div id="contenedorcentrado">
+            <div id="login">
+                <form id="loginform">
+                    <label for="usuario">Usuario</label>
+                    <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+
+                    <label for="password">Contraseña</label>
+                    <input id="password" type="password" placeholder="Contraseña" name="password" required>
+
+                    <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                </form>
+
+            </div>
+            <div id="derecho">
+                <div class="tituloInicio">
+                    Bienvenido
+                </div>
+                
+                <div class="pie-form">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                    <a href="#">¿No tienes Cuenta? Registrate</a>
+                    
+                    <a href="#">« Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
