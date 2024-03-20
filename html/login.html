@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../view/css/estilos.css">
-    <title>American Eagle</title>
+    <link rel="stylesheet" href="../view/css/login.css">
+    <title>ALL BRANDS SPACE</title>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
         </div>
 
         <div class="titulo">
-            <h1><a href="../html/index.html">ALLBRANDSSPACE</a></h1>
+            <h1><a class="tituloHiper" href="../html/index.html">ALLBRANDSSPACE</a></h1>
         </div>
 
         <div class="inicio">
@@ -47,11 +48,27 @@
 
     </header>
 
-
     <!-- codigo debajo de la cabecera -->
 
+    <form>
+        <img src="../view/img/icons-usuario.png" alt="">
+        <label for="username">Usuario</label>
+        <input type="text" id="username" placeholder="login" required>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="contraseña" required>
+        <div class="box-visible">
+            <input type="checkbox" id="visible">
+            <label for="visible">Mostrar Contraseña</label>
+        </div>
+        <button type="submit" id="submit">Iniciar Sesion</button>
+    </form>
 
+
+
+
+    <!-- hasta acá llega el codigo del centro -->
     <script src="../controller/funcion.js"></script>
+    <script src="../controller/login.js"></script>
 </body>
 
 </html>
