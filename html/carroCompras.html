@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../view/css/estilos.css">
+    <link rel="stylesheet" href="../view/css/carroCompras.css">
+    <title>ALL BRANDS SPACE</title>
+</head>
+
+<body>
+    <header>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="../html/index.html">All Brands Space</a>
+                <a href="../html/americanEagle.html">AmericanEagle</a>
+                <a href="#">Chevignon</a>
+                <a href="#">Esprit</a>
+                <a href="#">G-Star Raw</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <div class="search">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </div>
+
+        <div class="titulo">
+            <h1><a class="tituloHiper" href="../html/index.html">ALLBRANDSSPACE</a></h1>
+        </div>
+
+        <div class="inicio">
+            <ul>
+                <a href="#"><img src="../view/img/icons-usuario.png" alt="iniciosesion"></a>
+            </ul>
+        </div>
+        <div class="cart">
+            <ul>
+                <a href="../html/carroCompras.html"><img src="../view/img/icons-carrito-de-compras.png" alt="Carrito de Compras"></a>
+            </ul>
+        </div>
+
+
+    </header>
+
+    <!-- codigo debajo de la cabecera -->
+
+    <div class="manuelanzas">
+        <section class="Producto">
+            <div>
+                <h3 class="Titulo1">PRODUCTO</h3>
+                <p class="Titulo1">Chaqueta Dama, color cafe</p>
+                <p class="Titulo1">Talla L</p>
+            </div>
+            <img src="../view/img/carroCompras/camisa1.webp" alt="" class="imagen1">
+            <img src="../view/img/carroCompras/icons8-trash-can-48.png" alt="" class="icono" onclick="borrarElemento(this)"
+                id="elementoABorrar1">
+            <section class="precio">
+                <p>$370.000</p>
+            </section>
+            <select class="sumador">
+                <div>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                </div>
+            </select>
+        </section>
+
+        <section class="Producto">
+            <div>
+                <h3 class="Titulo1">PRODUCTO</h3>
+                <p class="Titulo1">Camisa tipo polo, color negra</p>
+                <p class="Titulo1">Talla M</p>
+            </div>
+            <img src="../view/img/carroCompras/camisa1.webp" alt="" class="imagen1">
+            <img src="../view/img/carroCompras/icons8-trash-can-48.png" alt="" class="icono" onclick="borrarElemento(this)"
+                id="elementoABorrar2">
+            <section class="precio">
+                <p>$170.000</p>
+            </section>
+            <select class="sumador">
+                <div>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                </div>
+            </select>
+        </section>
+    </div>
+
+    <section class="resumen">
+        <div class="interior">
+            <h3 class="titulo2">Resumen de compra</h3>
+            <label for="" class="casilla">Subtotal $</label>
+            <input type="text" class="casilla2" id="subtotal" readonly>
+
+            <label for="" class="casilla">Iva</label>
+            <input type="text" class="casilla2" id="iva" readonly>
+
+            <label for="" class="casilla">Envio</label>
+            <input type="text" class="casilla2" id="envio" readonly>
+
+            <p class="texto">Si tiene algun codigo de descuento, ingreselo por favor </p>
+            <input type="text" placeholder="Ingrese su código de Promoción" class="casilla2">
+
+            <label for="" class="casilla"></label>
+            <input type="submit" value="Aplicar" class="boton">
+        </div>
+    </section>
+
+    <section class="datos">
+        <label for=""></label>
+        <input type="text" placeholder="Total $" class="datos" id="total" readonly>
+
+        <label for=""></label>
+        <input type="text" placeholder="Datos de envio" class="datos">
+    </section>
+
+    <!-- hasta acá llega el codigo del centro -->
+    </div>
+
+
+
+    <script src="../controller/funcion.js"></script>
+    <script src="../controller/carroCompras.js"></script>
+</body>
+
+</html>
